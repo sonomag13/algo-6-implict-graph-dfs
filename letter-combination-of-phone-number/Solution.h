@@ -4,17 +4,13 @@
 
     A mapping of digit to letters (just like on the telephone buttons) is given below.
 
-    1   2
-    ABC 3
-    DEF
-    4
-    GHI 5
-    JKL 6
-    MNO
-    7
-    PQRS    8
-    TUV 9
-    WXYZ
+     1       2       3
+            ABC     DEF     
+     4       5       6
+    GHI     JKL     MNO
+     7       8       9
+    PQRS    TUV     WXYZ    
+    
     Example
     Example 1:
 
