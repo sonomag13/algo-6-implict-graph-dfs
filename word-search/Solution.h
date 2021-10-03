@@ -1,3 +1,4 @@
+#include <iostream>
 #include <vector>
 
 using namespace std; 
@@ -15,7 +16,7 @@ public:
             return false; 
         }
         
-        _word = word;
+        _word = move(word);
         
         bool isFound{false}; 
         
@@ -26,7 +27,7 @@ public:
                 }
             }
         }
-                
+        
         return false; 
         
     }
@@ -43,9 +44,11 @@ private:
         }
         
         // the current string has the same size to the target string, but they do not match
-        if (currWord.size() == _word.size()) {
-            return false; 
-        }
+        // actually there is no need to check this since the string will never grow to the size
+        // of the word if it is not a match
+        // if (currWord.size() == _word.size()) {
+        //     return false; 
+        // }
         
         // the indices are out of the bounds                
         if (i < 0 || i >= _rowNum || j < 0 || j >= _colNum) {
